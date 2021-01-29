@@ -106,11 +106,14 @@ main section h3{
 main section .productos{
     background-color: #ffffff;
     margin-bottom: 10px;
+    border-radius: 25px ;
+    cursor: pointer;
 }
 
 main section .productos img{
     width: 100%;
     border: 1px solid #ebebed;
+    border-radius: 25px;
 }
 
 main section .productos .descripcion p{
@@ -420,12 +423,11 @@ footer #copy{
 
     main section .productos .descripcion .nom-articulo{
         font-size: 16px;
-        margin-top: 15px;
         position: relative;
         top: -15px;
         opacity: 0;
         height: 0;
-        transition: all 1.5s;
+        transition: all 2s;
     }
 
     main section .productos:hover .descripcion .nom-articulo{
