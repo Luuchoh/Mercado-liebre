@@ -55,11 +55,12 @@ form .nombre-comp input,
     padding: 5px 8px;
     border: none;
     border-radius: 10px;
-    border-bottom: 1.5px solid #000000;
+    border-bottom: 1.7px solid #000000;
 }
 
-form .nombre-comp input:focus{
-    border-bottom: 1.5px solid #1259c3;
+form input:focus{
+    border-bottom: 2.5px solid #1259c3;
+    outline: none;
 }
 
 form .rol select{
@@ -75,6 +76,7 @@ form .rol select{
 form .rol select:focus{
     border-radius: 10px 10px 0 0;
     border-bottom: 1.5px solid #1259c3;
+    outline: none;
 }
 
 form .categorias{
@@ -115,10 +117,7 @@ form .foto-perfil input{
     /* box-shadow: 5px 5px 10px #000000; */
 }
 
-form input:focus{
-    border: none;
-    outline: none;
-}
+
 
 form .btn{
     margin: 30px 0 30px 0;
