@@ -1,0 +1,285 @@
+/* Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a; */
+
+form{
+    margin: auto;
+    width: 100%;
+    background-color: #ebebeb;
+}
+
+form h3{
+    padding: 25px 0 15px 0;
+}
+
+form .nombre-comp,
+     .username,
+     .fecha,
+     .contrasenia,
+     .btn{
+    width: 100%;
+}
+
+form .nombre-comp label, input,
+     .username label, input,
+     .fecha label, input,
+     .contrasenia label, input,
+     .btn label, input,
+     .rol label,
+     .categorias label,
+     .foto-perfil label{
+    display: block;
+    width: 100%;
+}
+
+form .nombre-comp label,
+     .username label,
+     .fecha label,
+     .contrasenia label,
+     .rol label,
+     .categorias label,
+     .foto-perfil label{
+    padding: 15px;
+    font-size: 0.9rem ;
+    font-weight: bold;
+}
+
+form .nombre-comp input,
+     .username input, 
+     .fecha input,
+     .contrasenia input{
+    padding: 5px 8px;
+    border: none;
+    border-radius: 10px;
+    border-bottom: 1.5px solid #000000;
+}
+
+form .nombre-comp input:focus{
+    border-bottom: 1.5px solid #1259c3;
+}
+
+form .rol select{
+    padding: 5px 8px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    border-bottom: 1.5px solid #000000;
+    box-shadow: none;
+    appearance: none;
+}
+
+form .rol select:focus{
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1.5px solid #1259c3;
+}
+
+form .categorias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+form .categorias span {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: calc(50% - 10px);
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+form .categorias span input{
+    display: flex;
+    width: 30%;
+    padding: 5px;
+}
+
+form .categorias span label{
+    display: flex;
+    width: 70%;
+    font-weight: normal;
+    padding: 5px;
+}
+
+form .foto-perfil input{
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 5px 8px;
+    /* box-shadow: 5px 5px 10px #000000; */
+}
+
+form .btn{
+    margin: 30px 0 30px 0;
+}
+
+form .btn input[type="submit"]{
+    background-color: #1259c3;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    color: #ffffff;
+    margin: 30px 0 15px 0;
+}
+
+form .btn input[type="reset"]{
+    background-color: #f3213d;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    color: #ffffff;
+    margin: 15px 0 25px 0;
+}
+
+form .btn input[type="submit"], input[type="reset"]{
+    transition: 
+        background-color, 0.5s,
+        color, 0.5s;
+}
+
+form .btn input[type="submit"]:hover{
+    background-color: #0022AA;
+    color: #eeeeee;
+}
+
+form .btn input[type="reset"]:hover{
+    background-color: #c51028;
+    color: #eeeeee;
+}
+
+@media(min-width: 361px){
+    
+    form{
+        width: 70%;
+    } 
+
+    form h3{
+        padding: 40px 0 15px 0;
+    }
+
+    form .nombre-comp input,
+     .username input, 
+     .fecha input,
+     .contrasenia input{
+         padding: 7px;
+     }
+
+    form .rol select{
+        padding: 7px;
+    }
+
+    form .categorias span label{
+        padding: 7px;
+    }
+    
+    form .categorias span input{
+        padding: 7px;
+    }
+
+    form .foto-perfil input{
+        padding: 7px;
+    }
+    
+    form .btn{
+        width: 50%;
+        margin: auto;
+    }
+
+    form .btn input[type="submit"]{
+        padding: 12px;
+    }
+
+    form .btn input[type="reset"]{
+        padding: 12px;
+        margin: 15px 0 40px 0;
+    }
+}
+
+@media(min-width: 769px){
+
+    form{
+        width: 60%;
+    } 
+
+    form h3{
+        padding: 55px 0 15px 0;
+    }
+
+    form .nombre-comp{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    form .nombre-comp .nombres, .apellidos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: calc(50% - 20px);
+    }
+    form .nombre-comp .nombres label,
+    form .nombre-comp .nombres input{
+        display: block;
+        width: 100%;
+    }
+    
+    form .nombre-comp input,
+     .username input, 
+     .fecha input,
+     .contrasenia input{
+         padding: 9px;
+    }
+
+    form .rol select{
+        padding: 9px;
+    }
+
+    form .categorias span label{
+        padding: 9px;
+    }
+    
+    form .categorias span input{
+        padding: 9px;
+    }
+
+    form .foto-perfil input{
+        padding: 9px;
+    }
+
+    form .btn{
+        width: 30%;
+        margin: auto;
+    }
+
+    form .btn input[type="submit"]{
+        padding: 14px;
+    }
+
+    form .btn input[type="reset"]{
+        padding: 14px;
+        margin: 15px 0 55px 0;
+    }
+}
+
+
+/* form .rol {
+    border: 1px solid #ccc;
+    width: 140px;
+    background: #fff url("flecha-abajo.gif") no-repeat 90% center;
+  }
+  
+  .rol select {
+      padding: 5px 8px;
+      width: 130%;
+      border: none;
+      box-shadow: none;
+      background-color: transparent;
+      background-image: none;
+      appearance: none;
+  } */
