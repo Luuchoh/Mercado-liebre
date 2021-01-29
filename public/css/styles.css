@@ -408,11 +408,13 @@ footer #copy{
         transition: all 2s;
     } */
 
+    main section .productos .descripcion .img-envio i{
+        transition: all 1.5s;
+    }
     main section .productos:hover .descripcion .img-envio i{
         font-size: 20px;
         width: 36px;
         height: 36px;
-        transition: all 1.5s;
     }
 
 
