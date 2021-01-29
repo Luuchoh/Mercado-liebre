@@ -454,7 +454,7 @@ footer #copy{
 
     footer .tarjetas i:hover,
             .envios i:hover,
-            .seguridad :hover{
+            .seguridad i:hover{
         color: #666666;
     }
 }
